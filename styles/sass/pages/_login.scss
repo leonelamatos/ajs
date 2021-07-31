@@ -1,0 +1,96 @@
+.login {
+	position: relative;
+	padding: 20px;
+	img {
+		width: 80px;
+	}
+	.content {
+		z-index: 1;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		justify-content: space-between;
+		display: -moz-box;
+		display: flex;
+		-moz-box-orient: vertical;
+		-moz-box-direction: normal;
+		flex-direction: column;
+		-moz-box-pack: center;
+		justify-content: space-between;
+		-moz-box-align: center;
+		align-items: center;
+		width: 100%;
+		height: 450px;
+	}
+
+	#form {
+		display: flex;
+		flex-direction: column;
+		width: 300px;
+		margin-top: 20px;
+
+		label {
+			display: flex;
+			flex-direction: column;
+			padding: 10px 0;
+			span {
+				margin-bottom: 10px;
+			}
+
+			#username,
+			#password {
+				padding: 10px;
+				outline: none;
+				border: none;
+				background: #e6f5ff;
+				font-size: 1.2rem;
+				border-radius: 6px;
+
+				&::placeholder {
+					color: #bdceda;
+				}
+			}
+
+			.input-container {
+				display: flex;
+				position: relative;
+				#password {
+					width: 100%;
+				}
+
+				.show-pswd {
+					position: absolute;
+					width: 18px;
+					margin-bottom: 0;
+					transform: translate(275px, 12px);
+
+					.eye_opened_svg__st0 {
+						fill: rgb(27, 27, 27);
+					}
+				}
+			}
+		}
+		button.btn {
+			padding: 14px;
+			margin: 16px 0;
+			border: none;
+			font-size: 1.3rem;
+			color: hsl(216deg 100% 91%);
+			// background: #004ba8;
+			background: #f16421;
+			border-radius: 10px;
+			letter-spacing: 1px;
+		}
+
+		.checkbox {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			span {
+				margin-bottom: 0;
+				margin-left: 10px;
+			}
+		}
+	}
+}
