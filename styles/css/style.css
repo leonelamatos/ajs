@@ -1,3 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
 
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  font-size: 2rem;
+}
+
+.aside h2 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.row {
+  display: flex;
+}
+
+main {
+  height: 10rem;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: blueviolet;
+  text-align: center;
+}
+
+aside {
+  width: 100px;
+  height: 100vh;
+  background-color: brown;
+  text-align: center;
+}
+
+.login {
+  position: relative;
+  padding: 20px;
+}
+.login img {
+  width: 80px;
+}
+.login .content {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  display: -moz-box;
+  display: flex;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  -moz-box-pack: center;
+  justify-content: space-between;
+  -moz-box-align: center;
+  align-items: center;
+  width: 100%;
+  height: 450px;
+}
+.login #form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-top: 20px;
+}
+.login #form label {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.login #form label span {
+  margin-bottom: 10px;
+}
+.login #form label #username,
+.login #form label #password {
+  padding: 10px;
+  outline: none;
+  border: none;
+  background: #e6f5ff;
+  font-size: 1.2rem;
+  border-radius: 6px;
+}
+.login #form label #username::placeholder,
+.login #form label #password::placeholder {
+  color: #bdceda;
+}
+.login #form label .input-container {
+  display: flex;
+  position: relative;
+}
+.login #form label .input-container #password {
+  width: 100%;
+}
+.login #form label .input-container .show-pswd {
+  position: absolute;
+  width: 18px;
+  margin-bottom: 0;
+  transform: translate(275px, 12px);
+}
+.login #form label .input-container .show-pswd .eye_opened_svg__st0 {
+  fill: #1b1b1b;
+}
+.login #form button.btn {
+  padding: 14px;
+  margin: 16px 0;
+  border: none;
+  font-size: 1.3rem;
+  color: #d1e3ff;
+  background: #f16421;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+.login #form .checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.login #form .checkbox span {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+#backimage {
+  height: calc(100vh - 30px);
+  position: relative;
+  opacity: 0.4;
+  background: url("../../assets/img/background.jpg"), #030d8b;
+  background-attachment: scroll;
+  opacity: 0.5;
+  background-blend-mode: screen;
+}
+#backimage #image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
