@@ -1,8 +1,11 @@
 .login {
 	position: relative;
-	padding: 20px;
+	// padding: 20px;
+
 	img {
-		width: 80px;
+		width: 100px;
+		margin: 1.5rem;
+		// position: absolute;
 	}
 	.content {
 		z-index: 1;
@@ -22,6 +25,7 @@
 		align-items: center;
 		width: 100%;
 		height: 450px;
+		color: #32586b;
 	}
 
 	#form {
