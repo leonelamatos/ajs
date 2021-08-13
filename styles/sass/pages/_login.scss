@@ -4,7 +4,7 @@
 
 	img {
 		width: 100px;
-		margin: 1.5rem;
+		margin: .5rem 3rem;
 		// position: absolute;
 	}
 	.content {
@@ -85,6 +85,7 @@
 			background: #f16421;
 			border-radius: 10px;
 			letter-spacing: 1px;
+			cursor: pointer;
 		}
 
 		.checkbox {
