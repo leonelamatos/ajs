@@ -203,10 +203,10 @@ aside {
 
 .login {
   position: relative;
-  padding: 20px;
 }
 .login img {
-  width: 80px;
+  width: 100px;
+  margin: 1.5rem;
 }
 .login .content {
   z-index: 1;
@@ -226,6 +226,7 @@ aside {
   align-items: center;
   width: 100%;
   height: 450px;
+  color: #32586b;
 }
 .login #form {
   display: flex;
@@ -290,21 +291,14 @@ aside {
   margin-left: 10px;
 }
 
-#backimage {
+#login {
   height: calc(100vh - 30px);
   position: relative;
-  opacity: 0.4;
   background: url("../../assets/img/background.jpg"), #030d8b;
   background-attachment: scroll;
-  opacity: 0.5;
+  background-position: center center;
+  background-size: cover;
   background-blend-mode: screen;
-}
-#backimage #image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
