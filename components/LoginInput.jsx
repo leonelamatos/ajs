@@ -1,5 +1,6 @@
-import Image from 'next/image';
 import OpenEyeIcon from '../assets/img/eye_opened.svg';
+
+import Link from 'next/link';
 
 const LoginInput = () => {
 	return (
@@ -26,8 +27,9 @@ const LoginInput = () => {
 					</span>
 				</span>
 			</label>
-
-			<button className='btn'>Login</button>
+			<Link href='user/home'>
+				<button className='btn'>Login</button>
+			</Link>
 			<label htmlFor='checkbox' className='checkbox'>
 				<input type='checkbox' name='rememberMe' id='checkbox' />
 				<span>Remember Me</span>
