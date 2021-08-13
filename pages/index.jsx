@@ -1,7 +1,6 @@
 import LoginInput from '../components/LoginInput';
 import logo from '../assets/img/company-logo.png';
 
-import Image from 'next/image';
 
 const Login = () => {
 	return (
@@ -11,7 +10,7 @@ const Login = () => {
 				<h1>Active Job Status Login</h1>
 				<LoginInput />
 			</div>
-			<div id='backimage' />
+			{/* <div id='backimage' /> */}
 		</div>
 	);
 };
