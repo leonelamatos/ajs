@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
 html,
 body,
 div,
@@ -189,9 +193,28 @@ main {
 
 .header {
   width: 100%;
-  height: 50px;
-  background-color: blueviolet;
+  background-color: #fff;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.header #logo {
+  width: 100px;
+  height: 100%;
+}
+.header #logo img {
+  width: 100%;
+}
+.header #avatar-logout {
+  width: 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header #avatar-logout img {
+  width: 40px;
 }
 
 aside {
@@ -206,7 +229,7 @@ aside {
 }
 .login img {
   width: 100px;
-  margin: 1.5rem;
+  margin: 0.5rem 3rem;
 }
 .login .content {
   z-index: 1;
@@ -280,6 +303,7 @@ aside {
   background: #f16421;
   border-radius: 10px;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 .login #form .checkbox {
   display: flex;
