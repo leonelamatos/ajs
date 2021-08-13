@@ -5,15 +5,13 @@ import Image from 'next/image';
 
 const Login = () => {
 	return (
-		<div className='login'>
-			<Image src={logo} alt='company logo' />
+		<div id='login' className='login'>
+			<img src='company-logo.png' alt='company logo' className='image' />
 			<div className='content'>
 				<h1>Active Job Status Login</h1>
 				<LoginInput />
 			</div>
-			<div id='backimage'>
-				<div id='image-overlay'></div>
-			</div>
+			<div id='backimage' />
 		</div>
 	);
 };
