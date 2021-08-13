@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Header from '../../layouts/header';
-import Sidebard from '../../layouts/Sidebard';
+import Header from '../../components/layouts/header';
+import Sidebard from '../../components/layouts/Sidebard';
 
 export default function Home() {
 	return (
