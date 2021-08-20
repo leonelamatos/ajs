@@ -218,10 +218,29 @@ main {
 }
 
 aside {
-  width: 100px;
   height: 100vh;
-  background-color: brown;
+  background-color: #241109;
   text-align: center;
+  padding: 84px 15px;
+  display: -moz-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-end;
+}
+aside .aside-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  cursor: pointer;
+}
+aside .aside-container img {
+  width: 20px;
+}
+aside .aside-container #dashboard {
+  width: 25px;
 }
 
 .login {
@@ -324,5 +343,3 @@ aside {
   background-size: cover;
   background-blend-mode: screen;
 }
-
-/*# sourceMappingURL=style.css.map */
